@@ -61,6 +61,8 @@ body {
 
 #editing-html, #editing-css {
     z-index: 1;
+    overflow: auto;
+    white-space: pre;
 }
   
 #highlighting1, #highlighting2 {
