@@ -11,7 +11,6 @@ body {
 .flex-container {
     width: 100%;
     max-width: 1000px;
-    min-height: 400px;
     margin: 0 auto !important;
     display: flex;
 }
@@ -24,8 +23,9 @@ body {
 #preview {
     min-width: 300px;
     width: calc(100% - 20px);
-    min-height: 540px;
+    min-height: 510px;
     margin: 10px;
+    margin-left: 0;
     background-color: #fff;
     position: absolute;
     padding-top: 10px;
@@ -36,9 +36,10 @@ body {
 #editing-html, #editing-css, #highlighting1, #highlighting2 {
     /* Both elements need the same text and space styling so they are directly on top of each other */
     margin: 10px;
+    margin-right: 0;
     padding: 10px;
     border: 0;
-    width: calc(100% - 32px);
+    width: calc(100% - 20px);
     height: 250px;
 }
   
@@ -57,7 +58,7 @@ body {
 
 #editing-css, #highlighting2  {
     position: absolute;
-    top: 280px;
+    top: 260px;
     left: 0;
 }
 
