@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
 :not(#preview *) {
     margin: 0;
     padding: 0;
@@ -45,9 +47,9 @@ body {
   
 #editing-html, #editing-css, #highlighting1, #highlighting2, #highlighting1 *, #highlighting2 * {
     /* Also add text styles to highlighting tokens */
-    font-size: 15pt;
-    font-family: monospace;
-    line-height: 20pt;
+    font-size: 14pt;
+    font-family: 'Ubuntu Mono', monospace;
+    line-height: 18pt;
 }
 
 #editing-html, #editing-css, #highlighting1, #highlighting2  {
