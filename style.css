@@ -69,6 +69,7 @@ body {
   
 #highlighting1, #highlighting2 {
     z-index: 0;
+    overflow: hidden;
 }
 
 #editing-html, #editing-css {
