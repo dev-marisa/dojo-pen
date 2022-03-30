@@ -1,10 +1,11 @@
-:not(#preview), :not(#preview *) {
+:not(#preview *) {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #333;
+    background-color: #2a2a2a;
 }
 
 .flex-container {
@@ -21,7 +22,8 @@ body {
 }
 
 #preview {
-    width: 100%;
+    min-width: 300px;
+    width: calc(100% - 20px);
     min-height: 540px;
     margin: 10px;
     background-color: #fff;
