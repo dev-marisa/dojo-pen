@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo-Pen</title>
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="prism.js"></script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-1">
+<!-- HTML code editor -->
+            <textarea id="editing-html" spellcheck="false" oninput="updateHTML(this.value); syncScrollHTML(this);" onscroll="syncScrollHTML(this);"></textarea>
+                <pre id="highlighting1" aria-hidden="true">
+<code class="language-html" id="highlighting-html"></code>
+                </pre>
+<!-- CSS code editor -->
+            <textarea id="editing-css" spellcheck="false" oninput="updateCSS(this.value); syncScrollCSS(this);" onscroll="syncScrollCSS(this);"></textarea>
+                <pre id="highlighting2" aria-hidden="true">
+<code class="language-css" id="highlighting-css"></code>
+                </pre>
+        </div>
+        
+        <div class="flex-1">
+            <style id="preview-css"></style>
+            <div id="preview"></div>
+        </div>
+    </div>
+    <!-- <button onclick="generateLink()">Generate Link</button> -->
+    <script src="script.js"></script>
+</body>
+</html>

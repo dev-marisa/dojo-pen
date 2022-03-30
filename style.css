@@ -1,0 +1,75 @@
+:not(#preview), :not(#preview *) {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+.flex-container {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 400px;
+    margin: 0 auto !important;
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+    position: relative;
+}
+
+#preview {
+    width: 100%;
+    min-height: 540px;
+    margin: 10px;
+    background-color: #fff;
+    position: absolute;
+    padding-top: 10px;
+}
+
+/* css-tricks code */
+
+#editing-html, #editing-css, #highlighting1, #highlighting2 {
+    /* Both elements need the same text and space styling so they are directly on top of each other */
+    margin: 10px;
+    padding: 10px;
+    border: 0;
+    width: calc(100% - 32px);
+    height: 250px;
+}
+  
+#editing-html, #editing-css, #highlighting1, #highlighting2, #highlighting1 *, #highlighting2 * {
+    /* Also add text styles to highlighting tokens */
+    font-size: 15pt;
+    font-family: monospace;
+    line-height: 20pt;
+}
+
+#editing-html, #editing-css, #highlighting1, #highlighting2  {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#editing-css, #highlighting2  {
+    position: absolute;
+    top: 280px;
+    left: 0;
+}
+
+#editing-html, #editing-css {
+    z-index: 1;
+}
+  
+#highlighting1, #highlighting2 {
+    z-index: 0;
+}
+
+#editing-html, #editing-css {
+    color: transparent;
+    background: transparent;
+    caret-color: white; 
+    resize: none;
+}
